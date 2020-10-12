@@ -1,0 +1,184 @@
+Assignment - 1
+---------------------------------------------------------------------
+
+TASK-1 . Built-in functions in Python:
+
+---------------------------------------------------------------------
+
+	a. max(): Returns the largest number in a sequence of numbers or the first occuring alphabet in strings.
+	
+	Example: 
+
+		a = [6,10,4,0,1]
+		largest_num = max(a)
+		print("The largest number is {}".format(largest_num))
+
+	Result : The largest number is 10 
+
+	Example2:
+
+		str = ["Python","Java","C","SQL"]
+		largest_str = max(str)
+		print("The Largest used Language is {}".format(largest_str))
+
+	Result : The Largest used Language is SQL
+
+---------------------------------------------------------------------
+
+	b. min(): Returns the Smallest number in a sequence of numbers or the first occuring alphabet in strings.
+	
+	Example: 
+
+		a = [6,10,4,0,1]
+		smallest_num = min(a)
+		print("The smallest number is {}".format(smallest_num))
+
+	Result : The smallest number is 0
+	
+	Example2:
+
+		str = ["Python","Java","C","SQL"]
+		smallest_str = min(str)
+		print("The Largest used Language is {}".format(smallest_str))
+
+	Result : The Largest used Language is C
+
+---------------------------------------------------------------------
+
+	c. abs(): Returns the absolute value of a Negative number which is Positive number.
+
+	Example: 
+
+		a = -10
+		b = 2
+		Absolute_Value = abs(a/b)
+		print("The Absolute value is {}".format(Absolute_Value))
+	
+	Result : The Absolute value is 5.0
+
+	Example2:
+
+		a = -7.2
+		Absolute_Value = abs(a)
+		print("The Absolute value is {}".format(Absolute_Value))
+
+
+	Result : The Absolute value is 7.2
+
+---------------------------------------------------------------------
+
+	d. round(): Returns the rounded value of a float number to a whole number and is also used to round the decimal points to a certain number.
+
+	Example: 
+
+		a = 7
+		b = 3
+		Div = (a/b)
+		Round_value = round(Div,4)
+		print("The Rounding value is {}".format(Round_value))	
+
+	Result : The Rounding value is 2.3333
+
+	Example2:
+
+		a = 9
+		b = 7
+		Div = (a/b)
+		Round_value = round(Div,4)
+		print("The Rounding value is {}".format(Round_value))	
+
+	Result : The Rounding value is 1.2857
+
+---------------------------------------------------------------------
+
+	e. sort(): Returns the sorted sequence of numbers or strings as per the ASCII code values.
+
+	Example: 
+
+		str = "Python"
+		sorted_str = sorted(str)
+		print("Sorted string is {}".format(sorted_str))
+
+	Result : Sorted string is ['P', 'h', 'n', 'o', 't', 'y']
+	
+	Example2:
+
+		str = "zxcjsk"
+		sorted_str = sorted(str)
+		print("Sorted string is {}".format(sorted_str))
+
+	Result : Sorted string is ['c', 'j', 'k', 's', 'x', 'z']
+
+---------------------------------------------------------------------
+
+	f. range(): Returns the immutable of numbers in the form of a List ranging between the Starting and the Ending number.
+
+	Example: 
+
+		print(list(range(3)))
+
+	Result : [0,1,2]
+
+	Example2:
+
+		print(list(range(1,10)))
+
+	Result : [1,2,3,4,5,6,7,8,9]
+
+---------------------------------------------------------------------
+
+	g. reversed(): Returns the reverse of a string in the list format as individual alphabets or strings in a sequence of words.
+
+	Example: 
+
+		str = "Python"
+		reversed_str = list(reversed(str))
+		print("Reversed string is {}",format(reversed_str))
+
+	Result : Reversed string is ['n', 'o', 'h', 't', 'y', 'P']
+
+	Example2:
+
+		str = ["Python","Java","SQL"]
+		reversed_str = list(reversed(str))
+		print("Reversed string is {}",format(reversed_str))
+
+	Reversed string is ['SQL', 'Java', 'Python']
+
+---------------------------------------------------------------------
+
+	h. in(): Returns the boolean value by checking if the argument provided exists in the string or in the sequence of numbers.
+
+	Example:
+
+		a = "Welcome to Python"
+		print("to" in a)
+
+	Result : TRUE
+
+	Example2: 
+
+		a = [1,2,100,4,5,3,2,2]
+		print(100 in a)
+
+	Result : TRUE
+------------------------------------------------------------------------------------------------------------------------------------------
+TASK-2 . Check if the word "to" is present in the given string "Welcome to Python"
+
+---------------------------------------------------------------------
+
+	This task can be accomplished in two ways:
+
+	i. By using in():
+
+	string = "Welcome to Python"
+	print("to" in string)
+
+	Result returns true as "to" is present in the given string.
+
+	ii. By using Dunders __contains__:
+
+	string = "Welcome to Python"
+	print(a.__contains__("to"))
+
+	Result returns true as "to" is contained in the given string.
